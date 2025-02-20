@@ -9,6 +9,7 @@ import {
   validatorCompiler,
 } from 'fastify-type-provider-zod'
 import { env } from './env'
+import { accessInviteLinkRoute } from './routes/access-invite-link'
 import { subscribeToEventRoute } from './routes/subscribe-to-event-route'
 
 // serializaçao tranformar os dados antes de enviar para o front
@@ -34,6 +35,7 @@ app.register(fastifySwaggerUi, {
 })
 
 app.register(subscribeToEventRoute)
+app.register(accessInviteLinkRoute)
 
 app.listen({ port: env.PORT }).then(() => {
   console.log('Server is running!')
