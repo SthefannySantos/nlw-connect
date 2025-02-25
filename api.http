@@ -2,6 +2,22 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
 {
-  "name": "Styk",
-  "email": "styk@kyst.cs"
+  "name": "lucas22",
+  "email": "lucas22@gest.com",
+  "referrer": "e9fd8bb5-3729-420e-8ac4-e4f1c1c95764"
 }
+
+###
+GET http://localhost:3333/invites/fe919ba2-67f2-4a4e-a775-3379a691e227
+
+###
+GET http://localhost:3333/subscribers/fe919ba2-67f2-4a4e-a775-3379a691e227/ranking/clicks
+
+###
+GET http://localhost:3333/subscribers/fe919ba2-67f2-4a4e-a775-3379a691e227/ranking/count
+
+###
+GET http://localhost:3333/subscribers/fe919ba2-67f2-4a4e-a775-3379a691e227/ranking/position
+
+###
+GET http://localhost:3333/ranking
